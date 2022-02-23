@@ -1,0 +1,189 @@
+@font-face {
+  font-family: Sora;
+  src: url('../font/Sora-ExtraBold.ttf') format('truetype');
+}
+body {
+  background-color: #121212;
+}
+
+h1 {
+  display: inline;
+
+  font-family: "Sora", sans-serif;
+  color: aliceblue;
+  font-size: 2rem;
+}
+
+aside {
+  background: var(--color);
+}
+
+.violet {
+  color: var(--color);
+}
+
+.center {
+  text-align: center;
+}
+
+.randombutton {
+  box-sizing: border-box;
+  background-color: transparent;
+  font-size: 1.05rem;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Sora", sans-serif;
+  font-weight: 700;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    outline: 0;
+  }
+  border-radius: 5em;
+  border-color: var(--color);
+  color: var(--color);
+  transition: background 150ms ease-in-out, color 150ms ease-in-out;
+
+  &:hover {
+    color: #fff;
+    background-position: 0 100%;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: aliceblue;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Sora", sans-serif;
+  height: auto;
+}
+
+.photo {
+  vertical-align: middle;
+  width: 105px;
+  margin-right: 25px;
+}
+
+select {
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  flex: 1;
+  padding: 0 1em;
+  color: #fff;
+  background-color: #242424;
+  background-image: none;
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select {
+  right: 0;
+  margin-top: -2rem;
+  margin-right: 1rem;
+  position: absolute;
+  display: flex;
+  width: 12em;
+  height: 3em;
+  border-radius: 0.25em;
+  overflow: hidden;
+}
+
+.photoAccueil {
+  margin-top: 3%;
+  width: 300px;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: #333333;
+  transition: 0.25s all ease;
+  pointer-events: none;
+}
+
+.select:hover::after {
+  color: var(--color)
+}
+
+header {
+
+  background-color: #121212;
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+}
+
+body {
+  text-align: center;
+  position: relative;
+  min-height: calc(100vh - 16px);
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.35em;
+  border-radius: 0.25em;
+  background: white;
+  color: var(--color);
+}
+
+section {
+  padding-bottom: 3.5rem;
+}
+
+#result {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+#result div {
+  display:inline-block;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 8px;
+  height: auto;
+  width: 250px;
+}
+
+#result div h4 {
+  padding: 5px;
+  text-align: center;
+  background: none;
+  color: #ffffff;
+  border-radius: 8px;
+  margin: 0;
+}
+
+.img {
+  width: 250px;
+  height: 250px;
+  border-radius: 12px;
+  transition: 200ms;
+}
+
+.img:hover {
+  border-radius: Opx;
+  transform: scale(1.2);
+}
